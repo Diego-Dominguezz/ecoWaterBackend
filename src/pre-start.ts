@@ -25,6 +25,7 @@ const args = parse<IArgs>({
     type: String,
     defaultValue: 'development',
     alias: 'e',
+    optional: true,
   },
 });
 

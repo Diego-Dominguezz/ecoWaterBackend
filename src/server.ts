@@ -21,6 +21,7 @@ import { NodeEnvs } from '@src/constants/misc';
 import { RouteError } from '@src/other/classes';
 
 
+
 // **** Variables **** //
 
 const app = express();
@@ -45,6 +46,7 @@ if (EnvVars.NodeEnv === NodeEnvs.Production) {
 
 // Add APIs, must be after middleware
 app.use(Paths.Base, BaseRouter);
+
 
 // Add error handler
 app.use((

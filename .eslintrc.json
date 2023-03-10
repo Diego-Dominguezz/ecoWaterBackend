@@ -13,24 +13,23 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "@typescript-eslint/explicit-member-accessibility": "warn",
+    "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-misused-promises": 0,
     "@typescript-eslint/no-floating-promises": 0,
-    "max-len": [
-      "warn",
-      {
-        "code": 80
-      }
-    ],
+    "@typescript-eslint/restrict-template-expressions": "off",
     "comma-dangle": ["warn", "always-multiline"],
-    "no-console": 1,
+    "no-console": 0,
     "no-extra-boolean-cast": 0,
-    "semi": 1,
-    "indent": ["warn", 2],
-    "quotes": ["warn", "single"],
+    "no-empty":"off",
+    "no-unsafe-negation":"off",
+    "semi": 0,
+    "no-empty-function":"off",
+    "quotes": ["off", "single"],
     "node/no-process-env": 1,
     "node/no-unsupported-features/es-syntax": [
-      "error",
+      "warn",
       { "ignores" : ["modules"] }
     ],
     "node/no-missing-import": 0,
