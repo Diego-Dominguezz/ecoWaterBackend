@@ -15,7 +15,7 @@ export default class MongoPlant {
     }
 }
 interface waterSchedule {
-    id : ObjectId
+    id? : string
     start: EpochTimeStamp;
     end: EpochTimeStamp;
     duration: number;
