@@ -29,7 +29,7 @@ mongoUserRoutes.post("/", async (req: Request, res: Response) => {
     try {
         const newUser = req.body as mongoUser;
         const result = await collections.mongoUser.insertOne(newUser);
-        result ? res.status(201).send(`Creado usario con el id ${result.insertedId}`) : res.status(500).send("Fallida creacion de usuario.");
+        result ? res.status(201).send(`Creado usuario con el id ${result.insertedId}`) : res.status(500).send("Fallida creacion de usuario.");
     } catch (error) {
         console.error(error);
         res.status(400).send(error.message);
