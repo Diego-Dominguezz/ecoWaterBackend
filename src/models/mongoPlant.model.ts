@@ -22,7 +22,7 @@ interface waterSchedule {
     createdByUserId: ObjectId
 }
 interface PlantStats{
-    id: ObjectId
+    id: string
     humidity: string;
     daysAlive: number;
     timesWatered: number;
